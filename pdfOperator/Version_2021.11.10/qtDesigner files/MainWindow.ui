@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>985</width>
+    <height>725</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>750</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-10</y>
+      <width>1001</width>
+      <height>741</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/q/sdvc.jpg);</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>985</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>提取(&amp;F)</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="action_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_R">
+    <property name="title">
+     <string>编辑(R)</string>
+    </property>
+    <addaction name="action_3"/>
+    <addaction name="action_4"/>
+    <addaction name="action_5"/>
+    <addaction name="action_6"/>
+   </widget>
+   <widget class="QMenu" name="menu_T">
+    <property name="title">
+     <string>转换(T)</string>
+    </property>
+    <addaction name="actionPPT_PDF"/>
+    <addaction name="actionWord_PDF"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu_R"/>
+   <addaction name="menu_T"/>
+  </widget>
+  <action name="action">
+   <property name="text">
+    <string>文字(L)</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>表格(K)</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>去除加密</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>拆分</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>合并</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>删除页面</string>
+   </property>
+  </action>
+  <action name="actionPPT_PDF">
+   <property name="text">
+    <string>PPT转PDF</string>
+   </property>
+  </action>
+  <action name="actionWord_PDF">
+   <property name="text">
+    <string>Word转PDF</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="pictures.qrc"/>
+ </resources>
+ <connections/>
+</ui>
